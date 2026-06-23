@@ -1,0 +1,31 @@
+.env
+
+# ── Dependencies ──────────────────────────────────────────────────────
+node_modules/
+
+
+# ── Python cache ──────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+
+# ── Runtime data / generated files ────────────────────────────────────
+backend/data/
+*.db-shm
+*.db-wal
+
+# ── macOS system files ────────────────────────────────────────────────
+.DS_Store
+**/.DS_Store
+
+# ── Playwright logs ───────────────────────────────────────────────────
+.playwright-mcp/
+
+
+# ── IDE / editor ──────────────────────────────────────────────────────
+.vscode/
+.idea/
+
+# ── Build outputs (client) ────────────────────────────────────────────
+client/dist/
+client/out/

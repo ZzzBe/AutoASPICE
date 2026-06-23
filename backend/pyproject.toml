@@ -1,0 +1,25 @@
+[project]
+name = "autodev-studio-backend"
+version = "1.0.0"
+description = "AutoDev Studio backend - FastAPI service for automotive software development project management"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.32.0",
+    "pydantic>=2.10.0",
+    "python-multipart>=0.0.18",
+    "websockets>=14.1",
+    "httpx>=0.28.0",
+    "pyyaml>=6.0.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.24",
+    "httpx>=0.28.0",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
